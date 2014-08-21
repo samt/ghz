@@ -1,0 +1,25 @@
+<?php
+/*
+ * ghz.me url shortener
+ * when a long url hz.
+ *
+ * (c) 2014 Sam Thompson <contact@samt.us>
+ * License: MIT
+ */
+
+if (!defined('ROOT_PATH')) exit;
+
+// PDO connection information
+// fake defaults have been filled in.
+define('DB_DSN', 'mysql:host=localhost;dbname=ghz_me');
+define('DB_USER', 'ghz_me_db_user');
+define('DB_PASS', 'koolpass123');
+
+// Although you're suppose to run this on a really short domain at the root
+// level, you /can/ run it out of a subdirectory. Specify it here with a
+// trailing slash.
+//
+// Example:
+// If your app is located at "http://foo.bar/bazz/", you will specify BASENAME
+// as '/bazz/'.
+define('BASENAME', '/');

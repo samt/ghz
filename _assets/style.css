@@ -1,0 +1,76 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+* {
+  margin:0;
+  padding:0;
+}
+
+html,
+body {
+  font-family: "Droid Sans Mono", "Courier New", monospace;
+  background-color: #FFF;
+  position: relative;
+  height: 100%;
+}
+
+.main {
+  text-align: center;
+  padding-top: 15%;
+}
+
+h1 {
+  font-size: 72pt;
+}
+
+a:link, a:visited, a:active, a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.subhead {
+  text-align:center;
+  font-size: 16pt;
+  margin: -15px 0 10px;
+}
+
+.success,
+.error {
+  display: none;
+  font-weight: bold;
+  font-size: 14pt;
+  margin-bottom: 10px;
+}
+
+.success.visible,
+.error.visible {
+  display: block !important;
+}
+
+.error {
+  color: #A00;
+}
+
+.success {
+  color: #0A0;
+}
+
+input {
+  width: 440px;
+  font-size: 14pt;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.bottom-left,
+.bottom-right {
+  position: absolute;
+  bottom: 10px;
+}
+
+.bottom-left {
+  left: 10px;
+}
+
+.bottom-right {
+  right: 10px;
+}

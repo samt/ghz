@@ -1,0 +1,26 @@
+#
+# ghz.me url shortener
+# when a long url hz.
+#
+# (c) 2014 Sam Thompson <contact@samt.us>
+# License: MIT
+#
+
+# Most installs of apache deny this automatically. I've seen some versions of
+# ubuntu that don't include this configuration unfortunately
+<Files .htaccess>
+  Order Allow,Deny
+  Deny from all
+</files>
+
+# Deny access to the application's libs and other items
+<FilesMatch "^_(include|sql)">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
