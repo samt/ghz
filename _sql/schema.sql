@@ -46,6 +46,7 @@ CREATE TABLE `urls` (
   `ipaddr` varchar(255) COLLATE utf8_bin NOT NULL,
   `useragent` varchar(255) COLLATE utf8_bin NOT NULL,
   `referrer` varchar(255) COLLATE utf8_bin NOT NULL,
+  `language` varchar(255) COLLATE utf8_bin NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
